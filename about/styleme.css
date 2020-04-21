@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-    margin-bottom: 100px;
+    margin-bottom: 400px;
 }
 
 header {
@@ -30,10 +30,54 @@ p {
     color: black;
 }
 
+p::first-letter {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+
+ol#movies li a {
+    text-decoration: none;
+    color: black;
+}
+
+ol#movies li a:hover {
+    text-decoration: underline;
+}
+
+ol#movies li .movie-info {
+    list-style: none;
+    color: brown;
+    font-size: 14px;
+}
+
+ol#movies li .movie-info .info-list {
+    font-size: 12px;
+    list-style: none;
+    color: gray;
+}
+
 ul#moods li {
     display: inline;
     list-style: none;
     margin: 0;
+}
+
+/* counting backwards */
+ol
+{
+    list-style-type: none;
+    counter-reset:item 4;
+}
+
+ol > li
+{
+    counter-increment:item -1;
+}
+
+ol > li:before
+{
+    content:counter(item) ". ";
 }
 
 #moods img {

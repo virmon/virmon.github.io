@@ -13,6 +13,7 @@
         </header>
 
         <div class="wrapper">
+            <!-- list of classes -->
             <section class="list-group">
                 <h3>My Classes in MIU</h3>
                 <ul>
@@ -23,15 +24,29 @@
                 </ul>
             </section>
 
+            <!-- List of movies -->
             <section class="list-group">
                 <h3>My Favorite Movies and TV Shows</h3>
-                <ol>
-                    <li><a href="https://www.imdb.com/title/tt1442437/?ref_=fn_al_tt_1">Modern Family</a></li>
+                <!-- nested list -->
+                <ol id="movies">
                     <li><a href="https://www.imdb.com/title/tt0903747/?ref_=fn_al_tt_1">Breaking Bad</a></li>
                     <li><a href="https://www.imdb.com/title/tt4154796/?ref_=fn_al_tt_1">Avengers: Endgame</a></li>
+                    <li><a href="https://www.imdb.com/title/tt1442437/?ref_=fn_al_tt_1">Modern Family</a>
+                        <ul class="movie-info">
+                            <li><strong>Genre</strong></li>
+                                <ul class="info-list">
+                                    <li>Comedy | Drama | Romance</li>
+                                </ul>
+                            <li><strong>Tagline</strong></li>
+                                <ul class="info-list">
+                                    <li>One big happy family.</li>
+                                </ul>
+                        </ul>
+                    </li>
                 </ol>
             </section>
 
+            <!-- list of moods -->
             <section class="list-group">
                 <h3>My Moods</h3>
                 <ul id="moods">
