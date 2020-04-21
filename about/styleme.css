@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+}
+
+.wrapper {
+    margin-bottom: 100px;
+}
+
+header {
+    text-align: center;
+    color: rgb(47, 136, 163);
+    background-color: aliceblue;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+section.list-group {
+    width: 60%;
+    margin: auto;
+}
+
+section.list-group h3 {
+    color: rgb(23, 74, 133);
+}
+
+p {
+    color: black;
+}
+
+ul#moods li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+}
+
+#moods img {
+    float: left;
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    border: 5px solid rgb(180, 199, 209);
+    margin: 10px;
+}
+
+footer.validator {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(212, 209, 209);
+}
