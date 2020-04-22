@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+    background-image: url("recipeImages/silverware.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+a {
+    color: #A4A400;
+}
+
+ul {
+    list-style-image: url('recipeImages/pie_bullet.png');
+}
+
+h1 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#main-header {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+li span {
+    text-decoration: underline;
+}
+
+#copyright {
+    text-align: left;
+    text-align-last: end;
+}
+
+p span.cake {
+    text-decoration: line-through;
+}
+
+.comments {
+    background-color: #FFFFA8;
+    list-style: none;
+}
+
+#links li {
+    margin: 0;
+    list-style: none;
+}
+
+#summary, #links {
+    padding: 0;
+}
+
+#summary li {
+    list-style: none;
+}
+
+#copyright {
+    padding: 0;
+    float: right;
+    list-style: none;
+    text-align: left;
+}
+
+#validator {
+    text-align: right;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    position: absolute;
+    z-index: 1;
+}
+  
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
