@@ -61,9 +61,12 @@ dd ul li {
     padding: 0;
 }
 
+.column {
+    display: flex;
+}
+
 #column1, #column2{
     width: 47%;
-    float: left;
     margin-left: 2%;
     margin-top: 2%;
 }
