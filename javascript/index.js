@@ -78,16 +78,16 @@ function filterLongWords(words, n) {
     return newList;
 }
 
-let e = [1,2,3,4,5,6,7,8,9,10];
+const e = [1,2,3,4,5,6,7,8,9,10];
 
 // multiplies each number by 10
-let m = e.map((x) => x * 10);
+const m = e.map((x) => x * 10);
 
 // filter array
-let f = e.filter((x) => x === 3);
+const f = e.filter((x) => x === 3);
 
 // multiplies all numbers in the array
-let r = e.reduce((x, y) => x * y);
+const r = e.reduce((x, y) => x * y);
 
 
 /* ---------------------------- Test Cases ------------------------------*/
