@@ -74,7 +74,7 @@
     // when there is no such element.
     function nth(list, n) {
     //    arrayToList
-        let arr = [10, 20, 30];
+        let arr = listToArray(list);
         return arr.filter((x, index) => index === n);
     }
 
@@ -151,6 +151,8 @@
 
         it("returns the element in a given index", function() {
             assert.deepEqual(nth(arrayToList([10,20,30]), 1), [20]);
+            assert.deepEqual(nth(arrayToList([10,20,30]), 0), [10]);
+            assert.deepEqual(nth(arrayToList([10,20,30]), 2), [30]);
         });
 
         it("compares two values and returns true if the same", function() {
