@@ -1,9 +1,11 @@
+/*jshint esversion: 6 */
 (function() {
-"use strict"
+"use strict";
 
 window.onload = function() {
-    const DEFAULT_INTERVAL = 250
-    
+    const DEFAULT_INTERVAL = 250;
+
+    // set defaults
     let speed = DEFAULT_INTERVAL;
     let frameLength = 0;
     let index = 0;
@@ -12,6 +14,7 @@ window.onload = function() {
     let firstFrame = null;
     let frame = null;
 
+    // DOM elements
     let textArea = document.getElementById("text-area");
     let startBtn = document.getElementById("start");
     let stopBtn = document.getElementById("stop");
@@ -19,6 +22,7 @@ window.onload = function() {
     let speedBox = document.getElementById("turbo");
     let fontSize = document.getElementById("fontsize");
 
+    // change animation
     function changeAnimation() {
         let allFrames = ANIMATIONS[animation.value];
         frame = allFrames.split("=====\n");
@@ -28,6 +32,7 @@ window.onload = function() {
         index = 0;
     }
 
+    // toggle turbo speed
     function changeSpeed() {
         speed = speedBox.checked ? 50 : DEFAULT_INTERVAL;
         if (isRunning) {
@@ -35,6 +40,7 @@ window.onload = function() {
         }
     }
 
+    // change font-size in textarea by adding a predefined className
     function changeSize() {
         switch(fontSize.value) {
             case "Tiny":
@@ -58,6 +64,7 @@ window.onload = function() {
         }
     }
 
+    // start animation
     function startAnimation() {
         if (startInterval) {
             clearInterval(startInterval);
@@ -76,6 +83,7 @@ window.onload = function() {
         isRunning = true;
     }
 
+    // stop animation
     function stopAnimation() {
         if (!startInterval) {
             return;
@@ -85,12 +93,14 @@ window.onload = function() {
         isRunning = false;
     }
 
+    // start on click
     function onStart() {
         startBtn.disabled = true;
         stopBtn.disabled = false;
         startAnimation();
     }
 
+    // stop on click
     function onStop() {
         startBtn.disabled = false;
         stopBtn.disabled = true;
@@ -104,6 +114,6 @@ window.onload = function() {
     speedBox.onchange = changeSpeed;
     fontSize.onchange = changeSize;
     
-}
+};
 
 })();
