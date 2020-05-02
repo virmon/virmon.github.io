@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- add mocha css, to show results -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+        <!-- add mocha framework code -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+        <script>
+            mocha.setup('bdd'); // minimal setup
+        </script>
+        <!-- add chai -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+        <script>
+            // chai has a lot of stuff, let's make assert global
+            let assert = chai.assert;
+        </script>
+        <title>Javascript Practice</title>
+    </head>
+    <body>
+        <script src="index.js"></script>
+        <div id="mocha"></div>
+        <script>mocha.run();</script>
+    </body>
+</html>
